@@ -1,0 +1,87 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* p (tag name selector) -> 1 */
+/* .box (class name selector) -> 10*/
+/* #id (id selector) -> 100 */
+/* 12 */
+
+.main_wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+/* 11+1 */
+.container_item + span {
+    color: blue;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1440px;
+}
+
+a {
+    color: lightcoral;
+}
+
+ul {
+    list-style: none;
+}
+
+a:active {
+    color: lightgreen;
+}
+
+a:visited {
+    color: lightseagreen;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.list li:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-image: url(../tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+}
+
+.list li:nth-child(2n+1) {
+    background-color: aqua;
+    color: #000;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    outline: 1px solid;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+input[type='checkbox'] {
+    opacity: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.box:has(input[type='checkbox']:checked) {
+    background-color: pink;
+    border-radius: 50%;
+}

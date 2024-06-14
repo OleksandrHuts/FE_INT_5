@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <div class="page_wrapper">
         <header class="my_header">
             <div class="container">
                 <div class="header_content">
-                    <a class="d-ib" href="#">
-                        <img class="header_logo" src="../Lesson4/img/logo.svg" alt="productly logo">
+                    <a class="logo" href="#">
+                        <img class="header_logo" src="./assets/img/logo.svg" alt="productly logo">
                     </a>
-        
-                    <nav class="main_nav d-ib">
-                        <ul class="main_nav_list">
-                            <li class="nav_item">
-                                <a href="#proffesionals">Professionals</a>
-                            </li>
-                            <li class="nav_item">
-                                <a href="#proffesionals">Professionals</a>
-                            </li>
-                            <li class="nav_item">
-                                <a href="#proffesionals">Professionals</a>
-                            </li>
-                            <li class="nav_item">
-                                <a href="#proffesionals">Professionals</a>
-                            </li>
-                        </ul>
+
+                    <nav class="main_nav">
+                        <a href="#">Professionals</a>
+                        <a href="#">Customers</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Resources</a>
                     </nav>
-        
-                    <div class="header_actions d-ib">
-                        <a href="./contact_page">sign in</a>
-                        <a class="accent" href="./contact_page">sign up</a>
+
+                    <div class="header_actions">
+                        <a class="button" href="#">sign in</a>
+                        <a class="button accent" href="#">sign up</a>
                     </div>
                 </div>
             </div>
@@ -45,16 +44,17 @@
                     <div class="hero_content">
                         <div class="hero_col text-col">
                             <h1 class="site_title">The Design Thinking superpowers</h1>
-                            <p>
+                            <p class="site_description">
                                 Tools, tutorials, design and innovation experts, all in one place!
                                 The most intuitive way to imagine your next user experience.
                             </p>
-                            <button class="hero_cta">
+                            <button class="hero_cta button accent">
                                 get started
                             </button>
                         </div>
-                        <div class="hero_col">
-                            <img src="../Lesson4/img/hero.svg" alt="">
+
+                        <div class="hero_col img-col">
+                            <img src="./assets/img/hero.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -62,4 +62,5 @@
         </main>
     </div>
 </body>
+
 </html>
