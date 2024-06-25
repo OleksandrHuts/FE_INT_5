@@ -1,0 +1,11 @@
+@import '../base/vars';
+
+.button {
+    text-transform: capitalize;
+    color: #2F281E;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-weight: 600;
+
+    padding: 13px 26px;
+}
