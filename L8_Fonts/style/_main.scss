@@ -1,0 +1,40 @@
+$body_fz: 20;
+
+@font-face {
+    font-family: "Helvetica";
+    src:
+        local("Helvetica"),
+        url("../fonts/Helvetica/Helvetica.eot") format("eot"),
+        url("../fonts/Helvetica/Helvetica.ttf") format("truetype"),
+        url("../fonts/Helvetica/Helvetica.woff") format("woff"),
+        url("../fonts/Helvetica/Helvetica.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    font-weight: 100;
+    src:
+        local("Helvetica"),
+        url("../fonts/HelveticaLight/HelveticaLight.eot") format("eot"),
+        url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype"),
+        url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"),
+        url("../fonts/HelveticaLight/HelveticaLight.woff2") format("woff2");
+}
+
+html {
+    font-size: $body_fz * 1px;
+}
+
+.copy_text {
+    color: blue;
+    font-size: 2rem;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-weight: 500;
+}
+// 100 - light
+// 400 - normal
+// 500 - semibold
+// 600 or 700 - bold
+h1 {
+    font-weight: 400;
+}
