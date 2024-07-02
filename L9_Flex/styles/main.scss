@@ -1,0 +1,25 @@
+.box {
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    width: 33%;
+    max-width: 300px;
+    text-align: center;
+    outline: 1px solid black;
+    order: 10;
+}
+
+.page_wrapper {
+    outline: 2px solid black;
+    min-height: 700px;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+
+    display: flex;
+    justify-content: space-between; // align items on the MAIN axis by defaut flex-start
+    align-items: center; // by default stretch
+
+    flex-wrap: wrap;
+    // flex-direction: column-reverse;
+}

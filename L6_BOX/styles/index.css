@@ -51,13 +51,6 @@ section {
   padding: 13px 26px;
 }
 
-.header_content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 17px 0;
-}
-
 .logo {
   width: 200px;
 }

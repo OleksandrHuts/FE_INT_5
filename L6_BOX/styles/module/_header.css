@@ -1,0 +1,17 @@
+.logo {
+  width: 200px;
+}
+
+.header_actions .button:first-child {
+  margin-right: 32px;
+}
+
+.main_nav {
+  color: #2F281E;
+}
+.main_nav a:hover {
+  color: #FF9900;
+}
+.main_nav a:not(:last-child) {
+  margin-right: 20px;
+}
