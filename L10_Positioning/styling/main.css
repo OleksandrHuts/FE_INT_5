@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+}
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero_pic {
+  width: 100%;
+}
+
+.hero_heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #fff;
+}
+
+.hero_packshot {
+  width: 200px;
+}
+
+.hero_content {
+  position: absolute;
+  background-color: pink;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  background-color: #3b3b3b;
+  width: 200px;
+  height: 400px;
+  position: relative;
+}
+.card a {
+  font-size: 20px;
+  color: #fff;
+  bottom: 50px;
+  left: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.page_wrapper {
+  background-color: #59a8ec;
+}
