@@ -1,3 +1,100 @@
 @import './base/base';
 @import './layout/layout';
-@import './module/index.scss'; 
+@import './module/index.scss';
+
+// animations
+.section {
+    height: 300vh;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.page_wrapper {
+    padding-top: 80px;
+}
+
+.modal {
+    position: fixed;
+    border: 2px solid #3b3b3b;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    padding: 50px;
+    z-index: 10;
+
+    transform: translate(-50%, -50%);
+
+    //how to hide me?
+    // visibility: hidden;
+    // opacity: 0;
+    // width: 0;
+    // height: 0;
+    // padding: 0;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.text-col {
+    position: sticky;
+    top: 100px;
+}
+//transform possible values:
+// - rotate
+// - translate
+
+.site_title {
+    &:hover {
+        transform: scale(1.1) rotate(5deg) translate(-10px, 10px);
+    }
+}
+
+.carousel {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #000;
+    overflow: hidden;
+
+    .carousel_slides {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .carousel_item {
+        background-color: lightgreen;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
+    }
+}

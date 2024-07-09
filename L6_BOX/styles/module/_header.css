@@ -1,3 +1,10 @@
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+}
+
 .logo {
   width: 200px;
 }
@@ -14,4 +21,11 @@
 }
 .main_nav a:not(:last-child) {
   margin-right: 20px;
+}
+
+.header_nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
