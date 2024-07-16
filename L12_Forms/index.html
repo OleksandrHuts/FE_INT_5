@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <h2>Forms</h2>
+    <form class="my_form" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="_blank" method="post">
+        <input type="hidden" value="local server" name="data_from">
+        <label class="input_label">
+            <span class="label_text">Full name:</span>
+            <input
+            class="input_field"
+            type="text"
+            name="user_full_name"
+            placeholder="John Doe"
+            value="Alex">
+        </label>
+
+        <!-- <label class="input_label">
+            <span class="label_text">Email:</span>
+            <input class="input_field" type="email" name="user_email" placeholder="mail@mail.com" value="mail@mail.com" required>
+        </label>
+        <label class="input_label">
+            <span class="label_text">Phone number:</span>
+            <input class="input_field" type="tel" name="user_phone" placeholder="+1 999 999 23" value="0668013591" required>
+        </label> -->
+<!-- 
+        <label class="input_label">
+            <span class="label_text">Birthday:</span>
+            <input class="input_field" type="date" name="user_date" placeholder="01-01-1999" value="2024-07-17" required>
+        </label>
+
+        <label class="input_label">
+            <span class="label_text">Price range:</span>
+            <input class="input_field" type="range" name="user_range" placeholder="00-10" required>
+        </label> -->
+        <label class="input_label">
+            <span class="label_text">Price range:</span>
+            <input class="input_field" type="number" name="user_range" placeholder="00-10" required>
+        </label>
+        <h2><span class="label_text">Please, select Pizza additions:</span></h2>
+        <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Pineapple</span>
+            <input class="input_field" type="radio" name="pizza" value="Pineapple">
+        </label>
+        <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Onion</span>
+            <input class="input_field" type="radio" name="pizza" value="Onion">
+        </label>
+        <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Cheesse</span>
+            <input class="input_field" type="radio" name="pizza" value="Cheesse">
+        </label>
+        <textarea name="user_comment" placeholder="Type your comment here:"></textarea>
+        <!-- <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Pineapple</span>
+            <input class="input_field" type="checkbox" name="pizza" value="Pineapple">
+        </label>
+        <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Onion</span>
+            <input class="input_field" type="checkbox" name="pizza" value="Onion">
+        </label>
+        <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Cheesse</span>
+            <input class="input_field" type="checkbox" name="pizza" value="Cheesse">
+        </label>
+        <label class="input_label custom_checkbox_wrapper">
+            <span class="label_text">Chicken</span>
+            <input class="input_field" type="checkbox" name="pizza" value="chicken">
+        </label> -->
+
+        <select name="payment_type" multiple>
+            <option value="1">Credit Card</option>
+            <option value="0">Cash</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
