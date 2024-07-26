@@ -1,0 +1,10 @@
+.box {
+  width: 500px;
+  height: 500px;
+  background-image: url(../assests/hero.svg);
+  background-repeat: no-repeat;
+}
+
+svg:hover .logo_text {
+  stroke: lightcoral;
+}

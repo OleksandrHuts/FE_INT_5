@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/hamburgers.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="page_wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <div class="container">
+                    <ul class="nav_list">
+                        <li><a href="#">works</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">contacts</a></li>
+                    </ul>
+                    <button class="hamburger">
+                        <span></span>
+                    </button>
+                    <!-- <button class="hamburger hamburger--arrowalt" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button> -->
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="hero_content">
+                    <h1 class="hero_title">Patagonia</h1>
+                    <p class="hero_text">Fusce vehicula dolor arcu,
+                        sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+                    <picture>
+                        <source srcset="./img/hero-mobile.jpg" media="(max-width: 568px)" />
+                        <source srcset="./img/hero-tablet.jpg" media="(max-width: 1200px)" />
+                        <img class="hero_pict" src="./img/hero-dt.jpg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('body').classList.toggle('menu_open');
+            document.querySelector('.hamburger').classList.toggle('is-active');
+        })
+    </script>
+</body>
+
+</html>
