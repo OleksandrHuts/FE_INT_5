@@ -9,7 +9,7 @@
   </symbol>
 
   <symbol id="icon-arrow-two" viewBox="0 0 20 6">
-    <path d="M15 5.31299V0.312988L19.5 2.81299L15 5.31299Z" style="fill: var(--p1, #000)"/>
+    <path d="M15 5.31299V0.312988L19.5 2.81299L15 5.31299Z" style="fill: var(--custom, #000)"/>
     <rect y="2.31299" width="15" height="1" style="fill: var(--p1, #000)"/>
   </symbol>
 
