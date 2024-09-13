@@ -1,0 +1,32 @@
+.modal {
+    position: fixed;
+    width: 50%;
+    max-width: 500px;
+    background: lightblue;
+    padding: 30px;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 21px;
+    font-family: Arial;
+    display: none;
+}
+
+.modal.visible {
+    display: block;
+}
+
+.user-row {
+    display: flex;
+    background: lightblue;
+    padding: 30px;
+    color: #fff;
+    font-size: 21px;
+    font-family: Arial;
+}
+
+.user-name, .user-role {
+    width: 50%;
+}
